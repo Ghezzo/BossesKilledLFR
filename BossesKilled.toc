@@ -1,0 +1,17 @@
+## Interface: 90002
+## Title: BossesKilled
+## Notes: Shows you which bosses you've killed next to the raid finder and flex raid frames.
+## Author: wT
+## Version: 1.6.0
+## OptionalDeps: SocialTabs
+## X-Curse-Packaged-Version: v1.6.0
+## X-Curse-Project-Name: BossesKilled
+## X-Curse-Project-ID: bosseskilled
+## X-Curse-Repository-ID: wow/bosseskilled/mainline
+
+EventDispatcher.lua
+
+main.lua
+raid_data.lua
+
+BasicVersionSlashCmd.lua
