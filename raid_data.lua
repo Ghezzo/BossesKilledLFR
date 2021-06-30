@@ -101,4 +101,10 @@ addon.raidData = {
 	[2091] = { numEncounters = 3, startFrom =  1 }, -- Reliquary of Opulence
 	[2092] = { numEncounters = 3, startFrom =  1 }, -- Blood from Stone
 	[2096] = { numEncounters = 1, startFrom =  1 }, -- An Audience with Arrogance
+	
+	-- Sanctum of Domination
+	[2221] = { numEncounters = 3, startFrom =  1 }, -- The Jailer's Vanguard
+	[2222] = { numEncounters = 3, startFrom =  1 }, -- The Dark Bastille
+	[2223] = { numEncounters = 3, startFrom =  1 }, -- Shackles of Fate
+	[2224] = { numEncounters = 1, startFrom =  1 }, -- The Reckoning
 }
