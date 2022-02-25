@@ -107,4 +107,10 @@ addon.raidData = {
 	[2222] = { numEncounters = 3, startFrom =  1 }, -- The Dark Bastille
 	[2223] = { numEncounters = 3, startFrom =  1 }, -- Shackles of Fate
 	[2224] = { numEncounters = 1, startFrom =  1 }, -- The Reckoning
+
+  -- Sepulcher of the First Ones
+  [2292] = { numEncounters = 4, startFrom =  1 }, -- Ephemeral Plains
+	[2291] = { numEncounters = 3, startFrom =  1 }, -- Cornerstone of Creation
+	[2293] = { numEncounters = 3, startFrom =  1 }, -- Domination's Grasp
+	[2294] = { numEncounters = 1, startFrom =  1 }, -- The Grand Design
 }
