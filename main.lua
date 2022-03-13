@@ -83,7 +83,7 @@ function addon:CreateButton(parent, scale)
 	button:Show()
 
 	if parent.lastButton then
-		button:SetPoint("TOPLEFT", parent.lastButton, "BOTTOMLEFT", 0, -15)
+		button:SetPoint("TOPLEFT", parent.lastButton, "BOTTOMLEFT", 0, -25) -- -15
 	else
 		local x = 3
 		-- SocialTabs compatibility
@@ -95,12 +95,20 @@ function addon:CreateButton(parent, scale)
 	end
 
 	button:SetScale(scale)
-	button:SetWidth(32 + 16) -- Originally 32
+	button:SetWidth(66) -- Originally 32
+	button:SetHeight(37)
 
 	-- Need to find the button's texture in the regions so we can resize it. I don't like this part, but I can't think of a better way in case it's not the first region returned. (Is it ever not?)
 	for _, region in ipairs({button:GetRegions()}) do
-		if type(region) ~= "userdata" and region.GetTexture and region:GetTexture() == "Interface\\SpellBook\\SpellBook-SkillLineTab" then
-			region:SetWidth(64 + 24) -- Originally 64
+		
+		--[[if type(region) ~= "userdata" and region.GetTexture and region:GetTexture() == "Interface\\SpellBook\\SpellBook-SkillLineTab" then
+			region:SetWidth(64 + 24) -- Originally 64 (64 + 24)
+			break
+		end]]
+		
+		if type(region) ~= "userdata" then
+			region:SetWidth(120) -- Originally 64 (64 + 24)
+			region:SetHeight(70)
 			break
 		end
 	end
