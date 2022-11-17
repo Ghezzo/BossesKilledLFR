@@ -113,4 +113,19 @@ addon.raidData = {
 	[2291] = { numEncounters = 3, startFrom =  1 }, -- Cornerstone of Creation
 	[2293] = { numEncounters = 3, startFrom =  1 }, -- Domination's Grasp
 	[2294] = { numEncounters = 1, startFrom =  1 }, -- The Grand Design
+    
+    [2348] = { numEncounters = 1, startFrom =  1 },
+    [2347] = { numEncounters = 3, startFrom =  1 },
+    [2346] = { numEncounters = 4, startFrom =  1 },
+    [2345] = { numEncounters = 3, startFrom =  1 },
+    
+    [2343] = { numEncounters = 3, startFrom =  1 },
+    [2344] = { numEncounters = 1, startFrom =  1 },
+    [2342] = { numEncounters = 3, startFrom =  1 },
+    [2341] = { numEncounters = 3, startFrom =  1 },
+    
+    [2340] = { numEncounters = 1, startFrom =  1 },
+    [2339] = { numEncounters = 3, startFrom =  1 },
+    [2338] = { numEncounters = 3, startFrom =  1 },
+    [2337] = { numEncounters = 3, startFrom =  1 },
 }
