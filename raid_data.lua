@@ -128,4 +128,9 @@ addon.raidData = {
     [2339] = { numEncounters = 3, startFrom =  1 },
     [2338] = { numEncounters = 3, startFrom =  1 },
     [2337] = { numEncounters = 3, startFrom =  1 },
+    
+    -- Vaults of the Incarnates
+    [2370] = { numEncounters = 3, startFrom =  1 },
+    [2371] = { numEncounters = 3, startFrom =  1 },
+    [2372] = { numEncounters = 2, startFrom =  1 },
 }
