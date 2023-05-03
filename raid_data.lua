@@ -133,4 +133,9 @@ addon.raidData = {
     [2370] = { numEncounters = 3, startFrom =  1 },
     [2371] = { numEncounters = 3, startFrom =  1 },
     [2372] = { numEncounters = 2, startFrom =  1 },
+    
+    [2399] = { numEncounters = 3, startFrom =  1 },
+    [2400] = { numEncounters = 3, startFrom =  1 },
+    [2401] = { numEncounters = 2, startFrom =  1 },
+    [2402] = { numEncounters = 1, startFrom =  1 },
 }
