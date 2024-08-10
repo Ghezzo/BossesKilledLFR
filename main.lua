@@ -79,7 +79,7 @@ end
 
 -- Must return a CheckButton, or implement :SetChecked() and support OnClick scripts. Not 100% right now if anything else
 function addon:CreateButton(parent, scale)
-	local button = CreateFrame("CheckButton", parent:GetName().."BossesKilledButton"..tostring(id), parent, "SpellBookSkillLineTabTemplate")
+	local button = CreateFrame("CheckButton", parent:GetName().."BossesKilledButton"..tostring(id), parent, "CommunitiesGuildPerksButtonTemplate") -- CommunitiesGuildPerksButtonTemplate SpellBookSkillLineTabTemplate
 	button:Show()
 
 	if parent.lastButton then
@@ -91,11 +91,11 @@ function addon:CreateButton(parent, scale)
 			x = x + ceil(32 / scale)
 		end
 
-		button:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, -50)
+		button:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, -50) -- -50
 	end
 
 	button:SetScale(scale)
-	button:SetWidth(66) -- Originally 32
+	button:SetWidth(66) -- Originally 32 66
 	button:SetHeight(37)
 
 	-- Need to find the button's texture in the regions so we can resize it. I don't like this part, but I can't think of a better way in case it's not the first region returned. (Is it ever not?)
@@ -107,8 +107,8 @@ function addon:CreateButton(parent, scale)
 		end]]
 		
 		if type(region) ~= "userdata" then
-			region:SetWidth(120) -- Originally 64 (64 + 24)
-			region:SetHeight(70)
+			region:SetWidth(0.1) -- Originally 64 (64 + 24) 120
+			region:SetHeight(30) -- 70
 			break
 		end
 	end

@@ -1,1 +1,3 @@
-11.0.0
+11.0.0.1
+
+i know it doesnt really work and looks horrible, i might look into a proper fix at some point, but no errors anymore (hopefully?)
