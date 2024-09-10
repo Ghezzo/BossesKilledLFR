@@ -59,4 +59,9 @@ addon.raidData = {
 	[2589] = { numEncounters = 4, startFrom =  1 }, -- Gates of Retribution
 	[2588] = { numEncounters = 3, startFrom =  1 }, -- The Underhold
 	[2587] = { numEncounters = 3, startFrom =  1 }, -- Downfall
+
+    -- Nerub-ar Palace
+    [2649] = { numEncounters = 3, startFrom =  1 }, -- The Skittering Battlements
+    [2650] = { numEncounters = 3, startFrom =  1 }, -- Secrets of Nerub-ar Palace
+    [2651] = { numEncounters = 2, startFrom =  1 }, -- A Queen's Fall
 }

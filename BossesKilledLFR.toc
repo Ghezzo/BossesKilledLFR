@@ -1,6 +1,6 @@
 ## Interface: 110002
 ## Title: BossesKilledLFR
-## Version: 11.0.2
+## Version: 11.0.2.1
 ## Notes: Shows you which bosses you've killed next to the raid finder and flex raid frames.
 ## Author: wT
 ## OptionalDeps: SocialTabs

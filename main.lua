@@ -85,11 +85,11 @@ function addon:CreateButton(parent, scale)
 	if parent.lastButton then
 		button:SetPoint("TOPLEFT", parent.lastButton, "BOTTOMLEFT", 0, -25) -- -15
 	else
-		local x = 3
+		--local x = 3
 		-- SocialTabs compatibility
-		--[[if IsAddOnLoaded("SocialTabs") then
+		if C_AddOns.IsAddOnLoaded("SocialTabs") then
 			x = x + ceil(32 / scale)
-		end]]
+		end
 
 		button:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, -50) -- -50
 	end
