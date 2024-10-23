@@ -64,4 +64,9 @@ addon.raidData = {
     [2649] = { numEncounters = 3, startFrom =  1 }, -- The Skittering Battlements
     [2650] = { numEncounters = 3, startFrom =  1 }, -- Secrets of Nerub-ar Palace
     [2651] = { numEncounters = 2, startFrom =  1 }, -- A Queen's Fall
+ 
+     -- Blackrock Depths
+    [2750] = { numEncounters = 3, startFrom =  1 }, -- The Elemental Overlords
+    [2751] = { numEncounters = 3, startFrom =  1 }, -- Shadowforge City
+    [2752] = { numEncounters = 2, startFrom =  1 }, -- The Imperial Seat
 }
