@@ -69,4 +69,10 @@ addon.raidData = {
     [2750] = { numEncounters = 3, startFrom =  1 }, -- The Elemental Overlords
     [2751] = { numEncounters = 3, startFrom =  1 }, -- Shadowforge City
     [2752] = { numEncounters = 2, startFrom =  1 }, -- The Imperial Seat
+
+     -- Liberation of Undermine
+     [2780] = { numEncounters = 2, startFrom =  1 }, -- Shock and Awesome
+     [2781] = { numEncounters = 2, startFrom =  1 }, -- Maniacal Machinist
+     [2782] = { numEncounters = 3, startFrom =  1 }, -- Two Heads Are Better
+     [2783] = { numEncounters = 1, startFrom =  1 }, -- The Chrome King
 }
