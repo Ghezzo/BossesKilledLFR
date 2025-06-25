@@ -38,12 +38,20 @@ function addon:CreateButtons(parentFrame, DungeonAmountFunc, DungeonInfoFunc, Se
 	end
 	local buttons = parentFrame.BossesKilledButtons
 
+	local dungeonIDs = {}
 	for i = 1, DungeonAmountFunc() do
 		local id, name = DungeonInfoFunc(i)
 		local isAvailable, isAvailableToPlayer = IsLFGDungeonJoinable(id)
+		if isAvailable and isAvailableToPlayer and self.raidData[id] then
+			table.insert(dungeonIDs, id)
+		end
+	end
 
-		 -- Only make a button if there's data for it, and it hasn't been already made. This gets called multiple times so it updates correctly when you open up more raids
-		if isAvailable and isAvailableToPlayer and not buttons[id] and self.raidData[id] then
+	table.sort(dungeonIDs)
+
+	for _, id in ipairs(dungeonIDs) do
+		local name = select(2, DungeonInfoFunc(id))
+		if not buttons[id] then
 			local button = self:CreateButton(parentFrame, scale)
 			buttons[id] = button
 
@@ -52,7 +60,6 @@ function addon:CreateButtons(parentFrame, DungeonAmountFunc, DungeonInfoFunc, Se
 
 			parentFrame.lastButton = button
 
-			-- I just realised a CheckButton might already have it's own FontString, but uh... whatever.
 			button.number = self:CreateNumberFontstring(button)
 
 			button:SetScript("OnEnter", function(this)
@@ -64,16 +71,14 @@ function addon:CreateButtons(parentFrame, DungeonAmountFunc, DungeonInfoFunc, Se
 			button:SetScript("OnClick", function(this)
 				SetDropdownMenuFunc(this.dungeonID)
 				self.UpdateArrow()
-
-				-- This is to override the automatic highlighting when you click the button, while we want to use that to show queue status instead.
-				-- I've no idea why simply overriding this OnClick and not doing a SetChecked doesn't disable the behavior.
-				-- I probably shouldn't be using a CheckButton at all, but the SpellBookSkillLineTabTemplate looks pretty nice for the job.
 				this:SetChecked(this.checked)
 			end)
+
 			button.checked = false
 		end
 	end
 end
+
 
 ---------------------------------------- Overridables ----------------------------------------
 
