@@ -84,11 +84,11 @@ end
 
 -- Must return a CheckButton, or implement :SetChecked() and support OnClick scripts. Not 100% right now if anything else
 function addon:CreateButton(parent, scale)
-	local button = CreateFrame("CheckButton", parent:GetName().."BossesKilledButton"..tostring(id), parent, "CommunitiesGuildPerksButtonTemplate") -- CommunitiesGuildPerksButtonTemplate SpellBookSkillLineTabTemplate
+	local button = CreateFrame("CheckButton", parent:GetName().."BossesKilledButton"..tostring(id), parent, "CommunitiesFrameTabTemplate") -- CommunitiesGuildPerksButtonTemplate SpellBookSkillLineTabTemplate
 	button:Show()
 
 	if parent.lastButton then
-		button:SetPoint("TOPLEFT", parent.lastButton, "BOTTOMLEFT", 0, -25) -- -15
+		button:SetPoint("TOPLEFT", parent.lastButton, "BOTTOMLEFT", 0, -13) -- -15
 	else
 		local x = 3
 		-- SocialTabs compatibility
@@ -96,26 +96,27 @@ function addon:CreateButton(parent, scale)
 			x = x + ceil(32 / scale)
 		end
 
-		button:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, -50) -- -50
+		button:SetPoint("TOPLEFT", parent, "TOPRIGHT", x, -20) -- -50
 	end
 
 	button:SetScale(scale)
-	button:SetWidth(66) -- Originally 32 66
-	button:SetHeight(37)
+	button:SetWidth(32) -- 66
+	button:SetHeight(32) -- 37
 
 	-- Need to find the button's texture in the regions so we can resize it. I don't like this part, but I can't think of a better way in case it's not the first region returned. (Is it ever not?)
 	for _, region in ipairs({button:GetRegions()}) do
 		
-		--[[if type(region) ~= "userdata" and region.GetTexture and region:GetTexture() == "Interface\\SpellBook\\SpellBook-SkillLineTab" then
-			region:SetWidth(64 + 24) -- Originally 64 (64 + 24)
-			break
-		end]]
-		
-		if type(region) ~= "userdata" then
-			region:SetWidth(0.1) -- Originally 64 (64 + 24) 120
-			region:SetHeight(30) -- 70
+		if type(region) ~= "userdata" and region.GetTexture and region:GetTexture() == "Interface\\Icons\\UI_Chat" then
+			region:SetWidth(32) -- Originally 64 (64 + 24)
+			region:SetHeight(32) -- 70
 			break
 		end
+		
+		--[[ if type(region) ~= "userdata" then
+			region:SetWidth(0.1) -- Originally 64 (64 + 24) 120          0.1
+			region:SetHeight(30) -- 70           30
+			break
+		end ]]
 	end
 
 	return button
@@ -124,12 +125,12 @@ end
 function addon:GetButtonScale(numDungeons)
 	-- Ok, I still don't understand anything about the positioning and sizing of stuff in WoW, but the target frame is about 280'ish tall and buttons 32 and who gives a shit about margins and aaargh I'm going crazy /headexplode
 	-- Magic numbers! There's really no method to the madness, these numbers just happen to look ok
-	return min(480 / (numDungeons * 10), 1) -- 24 17
+	return min(480 / (numDungeons * 5), 1) -- 24 17      480
 end
 
 -- Must return a fontstring
 function addon:CreateNumberFontstring(parentButton)
-	local number = parentButton:CreateFontString(parentButton:GetName().."Number", "OVERLAY", "SystemFont_Shadow_Huge3")
+	local number = parentButton:CreateFontString(parentButton:GetName().."Number", "OVERLAY", "SystemFont_Outline")
 	number:SetPoint("TOPLEFT", -4, 4)
 	number:SetPoint("BOTTOMRIGHT", 5, -5)
 	return number
