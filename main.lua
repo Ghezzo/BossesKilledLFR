@@ -202,9 +202,9 @@ function addon:UpdateButtonsAndTooltips(parentFrame)
 			local bossName, _, isDead = GetLFGDungeonEncounterInfo(id, i)
             
 			if isDead then
-				if ENABLE_COLORBLIND_MODE == "0" then -- TODO: figure out if it's 0/false/null when not set
+				--[[ if ENABLE_COLORBLIND_MODE == "0" then ]] -- TODO: figure out if it's 0/false/null when not set
 					encounterLine.color = {RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b}
-				end
+				--[[ end ]]
                 if bossName == nil then
                     bossName = "bossname"
                     encounterLine.text = "Dead - "..bossName
@@ -213,9 +213,9 @@ function addon:UpdateButtonsAndTooltips(parentFrame)
                     numKilled = numKilled + 1
                 end
 			else
-				if ENABLE_COLORBLIND_MODE == "0" then
+				--[[ if ENABLE_COLORBLIND_MODE == "0" then ]]
 					encounterLine.color = {GREEN_FONT_COLOR.r, GREEN_FONT_COLOR.g, GREEN_FONT_COLOR.b}
-				end
+				--[[ end ]]
                 if bossName == nil then
                     bossName = "bossname"
                     encounterLine.text = "Alive - "..bossName
