@@ -70,9 +70,14 @@ addon.raidData = {
     [2751] = { numEncounters = 3, startFrom =  1 }, -- Shadowforge City
     [2752] = { numEncounters = 2, startFrom =  1 }, -- The Imperial Seat
 
-     -- Liberation of Undermine
-     [2780] = { numEncounters = 2, startFrom =  1 }, -- Shock and Awesome
-     [2781] = { numEncounters = 2, startFrom =  1 }, -- Maniacal Machinist
-     [2782] = { numEncounters = 3, startFrom =  1 }, -- Two Heads Are Better
-     [2783] = { numEncounters = 1, startFrom =  1 }, -- The Chrome King
+    -- Liberation of Undermine
+    [2780] = { numEncounters = 2, startFrom =  1 }, -- Shock and Awesome
+    [2781] = { numEncounters = 2, startFrom =  1 }, -- Maniacal Machinist
+    [2782] = { numEncounters = 3, startFrom =  1 }, -- Two Heads Are Better
+    [2783] = { numEncounters = 1, startFrom =  1 }, -- The Chrome King
+
+    -- Manaforge Omega
+    [2799] = { numEncounters = 3, startFrom =  1 }, -- Might of the Shadowguard
+    [2800] = { numEncounters = 3, startFrom =  1 }, -- Monsters of the Sands
+    [2801] = { numEncounters = 2, startFrom =  1 }, -- Heart of Darkness
 }
