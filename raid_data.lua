@@ -80,4 +80,9 @@ addon.raidData = {
     [2799] = { numEncounters = 3, startFrom =  1 }, -- Might of the Shadowguard
     [2800] = { numEncounters = 3, startFrom =  1 }, -- Monsters of the Sands
     [2801] = { numEncounters = 2, startFrom =  1 }, -- Heart of Darkness
+
+    -- Emerald Nightmare Remix
+    [2844] = { numEncounters = 3, startFrom =  1 }, -- Darkbough
+    [2845] = { numEncounters = 3, startFrom =  1 }, -- Tormented Guardians
+    [2846] = { numEncounters = 1, startFrom =  1 }, -- Rift of Aln
 }
