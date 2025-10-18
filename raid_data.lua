@@ -85,4 +85,7 @@ addon.raidData = {
     [2844] = { numEncounters = 3, startFrom =  1 }, -- Darkbough
     [2845] = { numEncounters = 3, startFrom =  1 }, -- Tormented Guardians
     [2846] = { numEncounters = 1, startFrom =  1 }, -- Rift of Aln
+
+    -- Trial of Valor Remix
+    [2851] = { numEncounters = 3, startFrom =  1 }, -- Trial of Valor
 }
