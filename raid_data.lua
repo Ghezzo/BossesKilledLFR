@@ -88,4 +88,10 @@ addon.raidData = {
 
     -- Trial of Valor Remix
     [2851] = { numEncounters = 3, startFrom =  1 }, -- Trial of Valor
+
+    -- The Nighthold Remix
+    [2847] = { numEncounters = 3, startFrom =  1 },
+    [2848] = { numEncounters = 3, startFrom =  1 },
+    [2849] = { numEncounters = 3, startFrom =  1 },
+    [2850] = { numEncounters = 1, startFrom =  1 },
 }
