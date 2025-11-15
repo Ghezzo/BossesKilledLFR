@@ -94,4 +94,10 @@ addon.raidData = {
     [2848] = { numEncounters = 3, startFrom =  1 },
     [2849] = { numEncounters = 3, startFrom =  1 },
     [2850] = { numEncounters = 1, startFrom =  1 },
+
+    -- Tomb of Sargeras Remix
+    [2835] = { numEncounters = 3, startFrom =  1 },
+    [2836] = { numEncounters = 3, startFrom =  1 },
+    [2837] = { numEncounters = 2, startFrom =  1 },
+    [2838] = { numEncounters = 1, startFrom =  1 },
 }
