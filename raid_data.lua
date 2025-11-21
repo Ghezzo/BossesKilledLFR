@@ -100,4 +100,10 @@ addon.raidData = {
     [2836] = { numEncounters = 3, startFrom =  1 },
     [2837] = { numEncounters = 2, startFrom =  1 },
     [2838] = { numEncounters = 1, startFrom =  1 },
+
+    -- Antorus, the Burning Throne Remix
+    [2821] = { numEncounters = 3, startFrom =  1 }, -- Light's Breach
+    [2822] = { numEncounters = 3, startFrom =  1 }, -- Forbidden Descent
+    [2823] = { numEncounters = 3, startFrom =  1 }, -- Hope's End
+    [2824] = { numEncounters = 2, startFrom =  1 }, -- Seat of the Pantheon
 }
