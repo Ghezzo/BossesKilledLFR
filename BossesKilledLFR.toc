@@ -1,9 +1,10 @@
-## Interface: 110207
+## Interface: 120000
 ## Title: BossesKilledLFR
-## Version: 11.2.7
+## Version: 12.0.0
 ## Notes: Shows you which bosses you've killed next to the raid finder and flex raid frames.
 ## Author: wT
 ## OptionalDeps: SocialTabs
+## X-Curse-Project-ID: 428062
 ## X-Wago-ID: e56np2G9
 
 EventDispatcher.lua
