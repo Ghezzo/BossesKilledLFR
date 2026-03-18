@@ -106,4 +106,12 @@ addon.raidData = {
     [2822] = { numEncounters = 3, startFrom =  1 }, -- Forbidden Descent
     [2823] = { numEncounters = 3, startFrom =  1 }, -- Hope's End
     [2824] = { numEncounters = 2, startFrom =  1 }, -- Seat of the Pantheon
+    
+    -- The Dreamrift
+    [3126] = { numEncounters = 1, startFrom =  1 }, -- The Dreamrift
+
+    -- The Voidspire
+    [3156] = { numEncounters = 3, startFrom =  1 }, -- Weapons of the Void
+    [3159] = { numEncounters = 2, startFrom =  1 }, -- Fanatics of the Light
+    [3160] = { numEncounters = 1, startFrom =  1 }, -- Crown of the Cosmos
 }
