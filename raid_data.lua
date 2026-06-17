@@ -117,4 +117,7 @@ addon.raidData = {
 
     -- March on Quel'danas
     [3155] = { numEncounters = 2, startFrom =  1 }, -- March on Quel'danas
+
+    -- Sporefall
+    [3215] = { numEncounters = 3, startFrom =  1 }, -- Sporefall
 }
