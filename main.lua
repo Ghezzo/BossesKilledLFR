@@ -50,12 +50,18 @@ function addon:CreateButtons(parentFrame, DungeonAmountFunc, DungeonInfoFunc, Se
 	-- undo this comment later
 	-- table.sort(dungeonIDs)
 
-	-- temporary fix for the fact that march raid is not in the right place in the dungeon list
-	table.sort(dungeonIDs, function(a, b)
-		if a == 3155 then return false end
-		if b == 3155 then return true end
-		return a < b
-	end)
+	-- stupid temporary fix for march raid. stupid blizz for giving the raid a stupid id, stupid. stupid
+	table.sort(dungeonIDs)
+
+	local special
+	for i, id in ipairs(dungeonIDs) do
+		if id == 3155 then
+			special = table.remove(dungeonIDs, i)
+			break
+		end
+	end
+
+	table.insert(dungeonIDs, 5, special)
 
 	for _, id in ipairs(dungeonIDs) do
 		local name = select(2, DungeonInfoFunc(id))
