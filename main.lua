@@ -175,7 +175,10 @@ function addon:UpdateButtonsAndTooltips(parentFrame)
 		--        },
 		--        {...} -- #2 etc etc
 		--     }
-		local tooltip = {{text = button.dungeonName}} -- Set up tooltip data with the dungeon name
+
+		local dungeonName = GetLFGDungeonInfo(id)
+		local tooltip = {{ text = dungeonName or "Unknown" }} -- Set up tooltip data with the dungeon name
+		
 		for i = index, numEncounters + index - 1 do
       
             if id == 847 and i == 3 then
