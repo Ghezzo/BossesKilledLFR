@@ -120,4 +120,10 @@ addon.raidData = {
 
     -- Sporefall
     [3215] = { numEncounters = 1, startFrom =  1 }, -- Sporefall
+
+    -- The Venomous Abyss
+    [3316] = { numEncounters = 2, startFrom =  1 }, -- The Soulcoilers
+    [3317] = { numEncounters = 2, startFrom =  1 }, -- The Essence of Venom
+    [3318] = { numEncounters = 2, startFrom =  1 }, -- The Serpent Warren
+    [3319] = { numEncounters = 2, startFrom =  1 }, -- The Tomb of Ula'tek
 }
