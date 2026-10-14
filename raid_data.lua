@@ -126,4 +126,7 @@ addon.raidData = {
     [3317] = { numEncounters = 2, startFrom =  1 }, -- The Essence of Venom
     [3318] = { numEncounters = 2, startFrom =  1 }, -- The Serpent Warren
     [3319] = { numEncounters = 2, startFrom =  1 }, -- The Tomb of Ula'tek
+
+    -- The Unbinding of Kith'ix
+    [3373] = { numEncounters = 1, startFrom =  1 }, -- The Unbinding of Kith'ix
 }
